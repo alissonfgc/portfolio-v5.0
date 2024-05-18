@@ -1,0 +1,32 @@
+@use 'variables'
+
+*
+    padding: 0
+    margin: 0
+    font-family: variables.$font-stack
+    font-style: normal
+    box-sizing: border-box
+    z-index: 1
+
+body
+    background: variables.$body-bg-color
+
+a, svg
+    transition: .4s
+
+.nt-embed
+    width: 100%
+    height: 100%
+
+.nt-embed canvas
+    width: 100%
+    height: 100%
+
+#animated-bg
+    border: 0
+    margin: 0
+    width: 100vw
+    height: 100vh
+    position: fixed
+    background-attachment: fixed
+    z-index: -1
