@@ -1,6 +1,10 @@
+import '../styles/components/maincontent.sass'
+
 const MainContent = () => {
   return (
-    <div>MainContent</div>
+    <div id="main-content">
+      todo o conteudo do site comeca a partir daqui
+    </div>
   )
 }
 
