@@ -2,7 +2,7 @@ import '../styles/components/gradient.sass'
 
 const SectionProjects = () => {
   return (
-    <div id='gradient'></div>
+    <div id='bg-gradient'></div>
   )
 }
 

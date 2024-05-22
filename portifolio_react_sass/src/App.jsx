@@ -14,8 +14,8 @@ function App() {
       <HomeSection />
       <TopMenu />
       <MainTitle />
-      <Gradient />
       <MainContent />
+      <Gradient />
     </div>
   )
 }

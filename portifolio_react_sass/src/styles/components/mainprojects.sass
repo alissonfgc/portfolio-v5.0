@@ -1,0 +1,97 @@
+@use '../variables'
+@use '../mixins'
+
+#main-projects
+    z-index: 2
+    width: 80%
+    position: absolute
+    top: -20vh
+    background-color: variables.$bg-color
+    border-radius: variables.$container-border-radius
+    box-shadow: 0 1rem 1rem .5rem rgba(0, 0, 0, 0.37)
+    padding: 10vh 10vw 4rem
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-auto-rows: minmax(100px, auto)
+    gap: 1rem
+
+    .text-box
+        grid-column-start: 1
+        grid-column-end: 4
+        grid-row-start: 1
+        grid-row-end: 3
+
+    .card-banner
+        background-color: variables.$bg-color-secundary
+        border-radius: variables.$card-border-radius
+        grid-column-start: 1
+        grid-column-end: 4
+        grid-row-start: 3
+        grid-row-end: 5
+
+    .card-secundary
+        background-color: variables.$bg-color-secundary
+        border-radius: variables.$card-border-radius
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 5
+        grid-row-end: 7
+        @media screen and (max-width: 300px)
+            grid-column-start: 1
+            grid-column-end: 4
+
+    .card-secundary-video
+        background-color: variables.$bg-color-secundary-video
+        border-radius: variables.$card-border-radius
+        @media screen and (max-width: 720px)
+            grid-column-start: 2
+            grid-column-end: 4
+            grid-row-start: 7
+            grid-row-end: 5
+        @media screen and (max-width: 300px)
+            grid-column-start: 1
+            grid-column-end: 4
+            grid-row-start: 8
+            grid-row-end: 9
+
+    .text-box-2
+        grid-column-start: 1
+        grid-column-end: 4
+        grid-row-start: 8
+        grid-row-end: 10
+
+    .card-banner-2
+        background-color: variables.$bg-color-secundary
+        border-radius: variables.$card-border-radius
+        grid-column-start: 1
+        grid-column-end: 4
+        grid-row-start: 10
+        grid-row-end: 12
+
+    .card-secundary-2
+        background-color: variables.$bg-color-secundary
+        border-radius: variables.$card-border-radius
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 12
+        grid-row-end: 14
+
+    .card-secundary-video-2
+        background-color: variables.$bg-color-secundary-video
+        border-radius: variables.$card-border-radius
+        grid-column-start: 2
+        grid-column-end: 4
+        grid-row-start: 12
+        grid-row-end: 14
+
+    h2
+        font-size: 2rem
+        color: variables.$text-color
+
+    h3
+        font-size: 1.5rem
+        color: variables.$text-color
+
+    p
+        font-size: 1rem
+        color: variables.$text-color
