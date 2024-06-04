@@ -1,0 +1,98 @@
+@use '../variables';
+@use '../mixins';
+
+#curriculum-section {
+    min-height: 60vh;
+    position: relative;
+    width: 100%;
+    padding: variables.$pattern-padding;
+    margin-top: 10vh;
+    background-image: url(../../img/bg-curriculum-section.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5vh 10vw 1rem;
+    display: grid;
+    grid-template-rows: repeat(4, 8vh);
+    grid-auto-rows: minmax(5px, auto);
+    gap: 1rem;
+
+    #curriculum-title {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    #curriculum-content {
+        @include mixins.center;
+        position: relative;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        #div-curriculum-img {
+            @include mixins.center;
+            max-height: 40vh;
+            gap: 2rem;
+
+            #curriculum-img {
+                filter: blur(1px);
+            }
+
+            #link-button {
+                text-decoration: none;
+                position: absolute;
+                background-color: #D9D9D9;
+                border: #000;
+                color: #000;
+                padding: 0.2rem 1rem;
+                border-radius: variables.$card-border-radius;
+                text-align: center;
+                transition: 0.3s;
+                cursor: pointer;
+                font-size: 1rem;
+                opacity: 1;
+            }
+
+            #link-button:hover {
+                opacity: 0.7;
+            }
+
+        }
+
+        #secundary-content {
+            @include mixins.center;
+            position: relative;
+            background-color: variables.$bg-color;
+            border-radius: variables.$card-border-radius;
+            min-height: 40vh;
+            width: 40vh;
+            padding: 4vw;
+            grid-auto-rows: minmax(2rem, auto);
+            display: grid;
+
+            .link-button {
+                text-decoration: none;
+                position: relative;
+                background-color: #D9D9D9;
+                border: #000;
+                color: #000;
+                padding: 0.2rem 1rem;
+                border-radius: variables.$card-border-radius;
+                text-align: center;
+                transition: 0.3s;
+                font-size: 1rem;
+                opacity: 1;
+            }
+        }
+    }
+
+}

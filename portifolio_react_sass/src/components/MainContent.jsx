@@ -1,8 +1,9 @@
+import '../styles/components/maincontent.sass'
+
+import AboutMeSection from './AboutMeSection'
+import CurriculumSection from './CurriculumSection'
 import MainProjects from './MainProjects'
 import SecundaryProjects from './SecundaryProjects'
-
-import '../styles/components/maincontent.sass'
-import AboutMeSection from './AboutMeSection'
 
 const MainContent = () => {
   return (
@@ -10,6 +11,7 @@ const MainContent = () => {
       <MainProjects />
       <SecundaryProjects />
       <AboutMeSection />
+      <CurriculumSection />
     </div>
   )
 }
