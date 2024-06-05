@@ -1,0 +1,259 @@
+@use '../variables';
+@use '../mixins';
+
+// #curriculum-section {
+//     min-height: 60vh;
+//     position: relative;
+//     width: 100%;
+//     padding: variables.$pattern-padding;
+//     margin-top: 10vh;
+//     background-image: url(../../img/bg-curriculum-section.svg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     padding: 5vh 10vw 1rem;
+
+//     display: grid;
+//     grid-template-rows: repeat(4, 10vh);
+//     grid-auto-rows: minmax(1rem, auto);
+//     gap: 1rem;
+
+//     #curriculum-title {
+//         grid-row-start: 1;
+//         grid-row-end: 2;
+//         display: flex;
+//         align-items: center;
+
+//         h2 {
+//             font-size: 2rem;
+//             margin-bottom: 1rem;
+//         }
+//     }
+
+//     #curriculum-content {
+//         //@include mixins.center;
+//         //position: relative;
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-auto-rows: minmax(100px, auto);
+//         grid-row-start: 2;
+//         grid-row-end: 6;
+//         gap: 2rem;
+
+//         //display: grid;
+
+
+//         #div-curriculum-img {
+//             grid-row-start: 1;
+//             grid-row-end: 2;
+
+//             max-height: 40vh;
+//             height: 100%;
+//             //gap: 2rem;
+//             // grid-row-start: 2;
+//             //grid-row-end: ;
+//             // grid-row-start: 2;
+//             // grid-row-end: 4; @include mixins.center;
+
+//             #curriculum-img {
+//                 filter: blur(1px);
+//             }
+
+//             #link-button {
+//                 text-decoration: none;
+//                 position: absolute;
+//                 background-color: #D9D9D9;
+//                 border: #000;
+//                 color: #000;
+//                 padding: 0.2rem 1rem;
+//                 border-radius: variables.$card-border-radius;
+//                 text-align: center;
+//                 transition: 0.3s;
+//                 cursor: pointer;
+//                 font-size: 1rem;
+//                 opacity: 1;
+//             }
+
+//             #link-button:hover {
+//                 opacity: 0.7;
+//             }
+
+//         }
+
+//         #secundary-content {
+
+//             @media screen and (min-width: variables.$small) {
+//                 grid-row-start: 1;
+//                 grid-row-end: 2;
+//             }
+
+//             @media screen and (max-width: variables.$medium) {
+//                 grid-row-start: 2;
+//                 grid-row-end: 3;
+//                 background-color: aqua;
+//             }
+
+//             //@include mixins.center;
+//             //position: relative;
+//             background-color: variables.$bg-color;
+//             border-radius: variables.$card-border-radius;
+//             //max-height: 40vh;
+//             //width: 40%;
+//             max-height: 40vh;
+//             //height: 40%;
+//             padding: 4vw;
+//             grid-auto-rows: minmax(2rem, auto);
+//             display: grid;
+
+//             @media screen and (min-width: variables.$small) {
+//                 grid-row-start: 4;
+//                 grid-row-end: 6;
+//             }
+
+//             .link-button {
+//                 text-decoration: none;
+//                 position: relative;
+//                 background-color: #D9D9D9;
+//                 border: #000;
+//                 color: #000;
+//                 padding: 0.2rem 1rem;
+//                 border-radius: variables.$card-border-radius;
+//                 text-align: center;
+//                 transition: 0.3s;
+//                 font-size: 1rem;
+//                 opacity: 1;
+//             }
+//         }
+//     }
+
+// }
+
+#curriculum-section {
+
+    position: relative;
+
+    background-image: url(../../img/bg-curriculum-section.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: variables.$pattern-padding;
+    margin-top: 10vh;
+
+    padding: 5vh 10vw 1rem;
+
+    min-height: 60vh;
+    width: 100%;
+
+    @include mixins.center;
+
+    #section-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-auto-rows: minmax(1rem, auto);
+        gap: 2rem;
+
+        #curriculum-title {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        #div-curriculum-img {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            @include mixins.center;
+
+            @media screen and (min-width: variables.$small) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+
+            @media screen and (max-width: variables.$medium) {
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            #curriculum-img {
+                max-height: 40vh;
+                filter: blur(1px);
+            }
+
+            #link-button {
+                text-decoration: none;
+                position: absolute;
+                background-color: #D9D9D9;
+                border: #000;
+                color: #000;
+                padding: 0.2rem 1rem;
+                border-radius: variables.$card-border-radius;
+                text-align: center;
+                transition: 0.3s;
+                cursor: pointer;
+                font-size: 1rem;
+                opacity: 1;
+            }
+
+            #link-button:hover {
+                opacity: 0.7;
+            }
+
+        }
+
+        #secundary-content-spacement {
+            @include mixins.center;
+            width: 100%;
+            height: 100%;
+
+            @media screen and (min-width: variables.$small) {
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }
+
+            @media screen and (max-width: variables.$medium) {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 4;
+                grid-row-end: 8;
+            }
+
+            #secundary-content {
+                @include mixins.center;
+                min-height: 200px;
+                max-height: 40vh;
+                height: 100%;
+                width: 60%;
+                background-color: variables.$bg-color;
+                border-radius: variables.$card-border-radius;
+                
+                display: grid;
+                column-gap: 1rem;
+                padding: 2rem;
+
+                .link-button {
+                    text-decoration: none;
+                    position: relative;
+                    background-color: #D9D9D9;
+                    border: #000;
+                    color: #000;
+                    padding: 0.2rem 1rem;
+                    border-radius: variables.$card-border-radius;
+                    text-align: center;
+                    transition: 0.3s;
+                    font-size: 1rem;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

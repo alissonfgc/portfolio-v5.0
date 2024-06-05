@@ -2,7 +2,7 @@
 @use '../mixins';
 
 #about-me-section {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     width: 100%;
     padding: variables.$pattern-padding;
@@ -56,9 +56,11 @@
                 object-fit: cover;
                 border-radius: 50%;
                 overflow: hidden;
+                box-shadow: 0 0.6rem 1rem .1rem rgba(0, 0, 0, 0.37);
             }
 
             #education {
+                box-shadow: 0 0.6rem 1rem .1rem rgba(0, 0, 0, 0.37);
                 align-items: center;
                 display: flex;
                 flex-direction: row;
@@ -125,6 +127,7 @@
             width: 100%;
             background-color: variables.$bg-color;
             border-radius: variables.$card-border-radius;
+            box-shadow: 0 1rem 1rem .4rem rgba(0, 0, 0, 0.37);
 
             @media screen and (min-width: variables.$small) {
                 grid-template-columns: repeat(3, 1fr);

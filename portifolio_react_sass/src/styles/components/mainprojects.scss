@@ -59,6 +59,8 @@
         .card-secundary-video {
             background-color: variables.$bg-color-secundary-video;
             border-radius: variables.$card-border-radius;
+
+            @include mixins.center;
     
             @media screen and (min-width: variables.$small) {
                 grid-column-start: 2;
