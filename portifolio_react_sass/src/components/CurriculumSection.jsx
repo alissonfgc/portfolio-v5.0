@@ -26,7 +26,7 @@ const CurriculumSection = () => {
                 <div id="secundary-content-spacement">
                     <div id="secundary-content">
                         {socialNetworks.map((network) => (
-                            <a href={network.link} class="link-button" id={network.name} key={network.name}>
+                            <a href={network.link} class="link-button" target="_blank" id={network.name} key={network.name}>
                                 {network.name} {network.icon}
                             </a>
                         ))}
