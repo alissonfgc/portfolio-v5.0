@@ -25,18 +25,10 @@ const SecundaryProjects = () => {
       <div id='secundary-projects-title'>
         <h2>Outros projetos</h2>
       </div>
-      <div id='filter-for-projects'>
-        <button class='button-filter'>Java</button>
-        <button class='button-filter'>Java Spring</button>
-        <button class='button-filter'>PHP</button>
-        <button class='button-filter'>MySQL</button>
-        <button class='button-filter'>JavaScript</button>
-        <button class='button-filter'>CSS</button>
-        <button class='button-filter'>Bootstrap</button>
-        <button class='button-filter'>Tailwind</button>
-      </div>
       <div id='carousel-secundary-projects'>
-      {/* Aqui vai ter um slider */}
+        Cards components ficam aqui, com os projetos secundarios
+        <br />
+        Os cards devem ter um titulo, link do repositorio, onde a explicação do projeto ficara do .read-me do repositorio
       </div>
     </section>
   )

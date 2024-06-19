@@ -30,7 +30,13 @@
         }
     
         .card-banner {
+            @include mixins.center;
             background-color: variables.$bg-color-secundary;
+            background-image: url('../../img/grid.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-shadow: inset 0px 0px 5px 3px #000;
             border-radius: variables.$card-border-radius;
             grid-column-start: 1;
             grid-column-end: 4;
@@ -40,8 +46,10 @@
     
     
         .card-secundary {
+            @include mixins.center;
             background-color: variables.$bg-color-secundary;
             border-radius: variables.$card-border-radius;
+            box-shadow: inset 0px 0px 5px 3px #000;
             grid-row-start: 5;
             grid-row-end: 7;
     
@@ -57,10 +65,10 @@
         }
     
         .card-secundary-video {
+            @include mixins.center;
             background-color: variables.$bg-color-secundary-video;
             border-radius: variables.$card-border-radius;
-
-            @include mixins.center;
+            box-shadow: inset 0px 0px 5px 3px #000;
     
             @media screen and (min-width: variables.$small) {
                 grid-column-start: 2;
@@ -92,7 +100,13 @@
         }
     
         .card-banner-2 {
+            @include mixins.center;
             background-color: variables.$bg-color-secundary;
+            background-image: url('../../img/grid.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-shadow: inset 0px 0px 5px 3px #000;
             border-radius: variables.$card-border-radius;
             grid-column-start: 1;
             grid-column-end: 4;
@@ -107,8 +121,10 @@
         }
     
         .card-secundary-2 {
+            @include mixins.center;
             background-color: variables.$bg-color-secundary;
             border-radius: variables.$card-border-radius;
+            box-shadow: inset 0px 0px 5px 3px #000;
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 12;
@@ -124,8 +140,10 @@
     
     
         .card-secundary-video-2 {
+            @include mixins.center;
             background-color: variables.$bg-color-secundary-video;
             border-radius: variables.$card-border-radius;
+            box-shadow: inset 0px 0px 5px 3px #000;
             grid-column-start: 2;
             grid-column-end: 4;
             grid-row-start: 12;
