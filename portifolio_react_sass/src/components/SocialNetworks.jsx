@@ -1,6 +1,6 @@
 import { FaFilePdf } from "react-icons/fa6";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import PDFFile from "../pdf-files/curriculo-dev-ALISSON_FERNANDES.pdf"
+import PDFFile from "../pdf-files/Curriculo-DEV-Java-Alisson_Fernandes.pdf"
 
 import "../styles/components/socialnetworks.sass"
 

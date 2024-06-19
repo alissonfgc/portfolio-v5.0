@@ -28,14 +28,12 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
     z-index: 3;
 
     @media(max-width: 779px) {
         position: fixed;
         top: 1px;
         right: 1px;
-
     }
 
     @media(min-width: 780px) {
@@ -45,8 +43,6 @@ nav {
         top: 1px;
         width: 80%;
     }
-
-
 }
 
 .links-container {
@@ -60,14 +56,11 @@ nav {
 nav a {
     height: 100%;
     padding: 0 20px;
-    display: flex;
     align-items: center;
     text-decoration: none;
     color: variables.$text-color;
-}
-
-nav a:hover {
-    background-color: var(--accent-color);
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 nav .home-link {
@@ -77,7 +70,39 @@ nav .home-link {
 nav .home-link img {
     max-height: 90%;
     margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
 
+nav .nav-menu {
+    list-style: none;
+}
+
+nav .nav-item {
+    display: inline;
+}
+
+nav .nav-item:hover {
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 1px solid variables.$text-color-secondary;
+    color: variables.$text-color;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav .active {
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 1px solid variables.$text-color-secondary;
+    background-color: variables.$bg-color-others;
+    color: variables.$text-color;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 nav svg {
@@ -113,11 +138,14 @@ nav svg {
     }
 
     nav a {
+        display: flex;
         box-sizing: border-box;
         height: auto;
         width: 100%;
         padding: 20px 30px;
         justify-content: flex-start;
+        user-select: none;
+        -webkit-user-select: none;
     }
 
     .open-sidebar-button,
