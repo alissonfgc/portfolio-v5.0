@@ -1,6 +1,8 @@
 # portfolio-v5.0
 2024 version of my portfolio.
 
+!IMPORTANT! - The project continues in development - <a href="https://alissonfgc.com/">Portfolio Link</a>
+
 Figma design of the page:
 Link of figma project: <a href="https://www.figma.com/design/fISnLCzepOtAPxTGeh69gf/Untitled?node-id=0%3A1&t=VK4uUCYLMspcgcG6-1">Figma</a>
 
