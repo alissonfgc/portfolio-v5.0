@@ -1,7 +1,9 @@
 import '../styles/components/maincontent.sass'
 
 import AboutMeSection from './AboutMeSection'
+import ContactSection from './ContactSection'
 import CurriculumSection from './CurriculumSection'
+import Footer from './Footer'
 import MainProjects from './MainProjects'
 import SecundaryProjects from './SecundaryProjects'
 
@@ -12,6 +14,8 @@ const MainContent = () => {
       <SecundaryProjects />
       <AboutMeSection />
       <CurriculumSection />
+      <ContactSection />
+      <Footer />
     </div>
   )
 }

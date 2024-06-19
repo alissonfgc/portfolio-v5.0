@@ -1,6 +1,6 @@
 import '../styles/components/curriculumsection.scss'
 
-import PDFFile from "../pdf-files/curriculo-dev-ALISSON_FERNANDES.pdf"
+import PDFFile from "../pdf-files/Curriculo-DEV-Java-Alisson_Fernandes.pdf"
 import CurriculumImage from "../img/curriculum-img.jpg"
 import { FaFilePdf } from "react-icons/fa6";
 import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
@@ -26,7 +26,7 @@ const CurriculumSection = () => {
                 <div id="secundary-content-spacement">
                     <div id="secundary-content">
                         {socialNetworks.map((network) => (
-                            <a href={network.link} class="link-button" id={network.name} key={network.name}>
+                            <a href={network.link} class="link-button" target="_blank" id={network.name} key={network.name}>
                                 {network.name} {network.icon}
                             </a>
                         ))}

@@ -1,6 +1,7 @@
 import SocialNetworks from "./SocialNetworks"
 
 import "../styles/components/maintitle.sass"
+import CalculateAge from "../scripts/CalculateAge"
 
 const MainTitle = () => {
     return (
@@ -11,7 +12,7 @@ const MainTitle = () => {
                     <h1>Full-Stack <br />Java Developer</h1>
                     <SocialNetworks />
                 </div>
-                <div id="order-3"><h2>Tenho (var) anos de idade <br /> Conheça meus projetos!</h2></div>
+                <div id="order-3"><h2>Tenho <CalculateAge /> anos de idade <br /> Conheça meus projetos!</h2></div>
             </div>
         </div>
     )

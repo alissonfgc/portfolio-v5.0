@@ -29,6 +29,10 @@
             grid-row-start: 1;
             grid-row-end: 2;
 
+            p {
+                text-indent: 2rem;
+            }
+
             @media screen and (min-width: variables.$small) {
                 grid-column-start: 1;
                 grid-column-end: 3;

@@ -51,10 +51,11 @@
     }
 
     #carousel-secundary-projects {
-        background-color: blue;
         height: 100%;
         grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-end: 6;
+
+        //aqui vai ficar o componente dos projetos secundarios, o carrossel  
     }
 
     h2 {

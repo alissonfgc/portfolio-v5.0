@@ -10,10 +10,19 @@ const AboutMeSection = () => {
             <div id='content'>
                 <div id="text-area">
                     <h2>Sobre mim</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dolorem architecto ea cupiditate non voluptate velit libero. Veniam excepturi magnam eligendi accusamus ullam dolore aliquid voluptas explicabo, ea quam vel!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur sequi illum at nostrum omnis inventore laudantium odit laborum, esse consequatur error vero ab iste est provident sed dicta, fugiat quaerat.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae fuga eligendi placeat. Voluptates asperiores voluptas, iusto esse ipsa totam odit ipsam molestiae? Nihil est quas, praesentium cupiditate quia exercitationem.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus aliquam vitae suscipit, obcaecati dolore illo esse sequi nam ea facilis numquam quas fugit praesentium adipisci porro expedita, nostrum deserunt laboriosam?
+                    <p>
+                        Sempre me interessei pela área da programação, antes de começar na faculdade já estudava Python,
+                        mesmo que tenha concluído o curso, continuo estudando diariamente. Atualmente estou estudando 
+                        <b> JavaScript, Java, Spring Boot (Framework de Java), React (Framework de JavaScript)</b>, entre outras tecnologias.
+                        Pretendo realizar a certificação Java da Oracle até o fim deste ano.
+
+                    </p>
+                    <br/>
+                    <p>
+                        Procuro sempre me aperfeiçoar e estudar algumas Skills necessárias para um desenvolvedor,
+                        como o entendimento do documentos de requisitos, UML, metodologias de desenvolvimento de software ágeis,
+                        entre outros, tenho muito interesse em atuar como <b>Desenvolvedor Full Stack Java </b>ou<b> Desenvolvedor Back-end Java.</b>
+
                     </p>
                 </div>
                 <div id="secundary-area">
