@@ -7,6 +7,8 @@ import MainTitle from './components/MainTitle';
 import Gradient from './components/Gradient';
 import TopMenu from './components/TopMenu';
 
+alert('O site ainda está em desenvolvimento');
+
 function App() {
   return (
     <div id="portfolio">
